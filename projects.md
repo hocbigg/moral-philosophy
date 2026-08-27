@@ -1,72 +1,41 @@
 # Projects
 
-This page is a curated collection of well-written, step-by-step guides for learning *Ethics* through hands-on, project-based practice.
+A curated directory of step-by-step methodological guides, structured analytical frameworks, and practical project walkthroughs for **Moral Philosophy**. 
 
-> *What I cannot create, I do not understand — Richard Feynman.*
+In philosophical ethics, understanding is demonstrated through practice: formulating valid arguments, dissecting case studies, designing rigorous thought experiments, assessing public policy ethics, and mapping logical inferences.
 
-These projects are meant to support learning throughout the curriculum, not only at the end.  
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.
+## Moral Argumentation & Philosophical Essays
 
-## Tutorials
+- [Guidelines on Writing a Philosophy Paper – Jim Pryor](http://www.jimpryor.net/teaching/guidelines/writing.html)
+- [A Guide to Writing in Ethical Reasoning – Harvard Writing Project](https://writingproject.fas.harvard.edu/)
+- [A Guide to Philosophical Writing – Elijah Chudnoff (Harvard Center for Expository Writing)](https://philosophy.fas.harvard.edu/)
+- [How to Write an Argumentative Philosophy Essay – Department of Philosophy, Simon Fraser University](https://www.sfu.ca/philosophy/resources/writing.html)
 
-* [Ethical Theory](#construct-your-own-ethical-theory)
-* [Moral Argument](#construct-your-own-moral-argument)
-* [Thought Experiment](#design-your-own-thought-experiment)
-* [Case Analysis](#write-your-own-case-analysis)
-* [Normative Framework](#develop-your-own-normative-framework)
-* [Applied Ethics Proposal](#write-your-own-applied-ethics-proposal)
-* [Metaethical Position](#articulate-your-own-metaethical-position)
-* [Deontological System](#build-your-own-deontological-system)
-* [Care Ethics Model](#construct-your-own-care-ethics-model)
-* [Contractarian Scheme](#reconstruct-your-own-contractarian-scheme)
-* [Moral Principle](#formulate-your-own-moral-principle)
-* [Ethical Critique](#write-your-own-ethical-critique)
+## Ethical Decision-Making & Applied Case Analysis
 
-### Construct your own ethical theory
+- [A Framework for Ethical Decision Making – Markkula Center for Applied Ethics, Santa Clara University](https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/)
+- [Ethical Lenses and Approaches to Applied Decision Making – Markkula Center for Applied Ethics](https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/)
+- [Practical Ethics Case Analysis and Commentary Archive – Oxford Uehiro Centre for Practical Ethics](https://www.practicalethics.ox.ac.uk/)
 
-* [How To Build Your Own Philosophy](https://themicrophilosopher.substack.com/p/how-to-build-your-own-philosophy) (Step-by-step article / framework)
-* [A Framework for Making Ethical Decisions](https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/) (Markkula Center – procedural guide adaptable to theory-building) (Step-by-step framework)
+## Thought Experiment & Counterexample Design
 
-### Construct your own moral argument
+- [Teaching Moral Philosophical Methodology through "Create Your Own Thought Experiment" – Mark Herman (AAPT / PLATO)](https://philosophyteachers.org/)
+- [Methodology of Thought Experiments and Conceptual Analysis in Ethics – Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/thought-experiment/)
 
-* [A Guide to Writing in Ethical Reasoning 15](https://writingproject.fas.harvard.edu/file_url/156) (Harvard Writing Project – detailed paper-writing guide for constructing ethical arguments) (PDF guide)
-* [How To Write An Ethical Argument?](https://www.youtube.com/watch?v=VtxH7kqtB58) (Philosophy Beyond – video walkthrough of crafting a moral argument) (Video tutorial)
+## Policy Briefs & Public Ethical Impact Assessments
 
-### Design your own thought experiment
+- [Ethical Impact Assessment (EIA) Methodology: A Tool of the Recommendation on the Ethics of Artificial Intelligence – UNESCO](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics/assessment)
+- [Deliberation Frameworks and Public Policy Briefings – Nuffield Council on Bioethics](https://www.nuffieldbioethics.org/)
+- [Guidance on Ethics and Governance of Artificial Intelligence for Health – World Health Organization](https://www.who.int/publications/i/item/9789240029200)
 
-* [Teaching Moral Philosophical Methodology through “Create Your Own Thought Experiment”](https://philosophyteachers.org/files/Mark-Herman-Teaching-Moral-Philosophical-Methodology-though.pdf) (Assignment instructions & methodology guide) (PDF guide)
+## Ethics Bowl & Deliberative Moral Debate
 
-### Write your own case analysis
+- [Intercollegiate Ethics Bowl Case Library, Rules & Preparation Guidelines – Association for Practical and Professional Ethics (APPE)](https://www.appe-ethics.org/cases-rules-guidelines/)
+- [National High School Ethics Bowl Case Analysis & Deliberation Handbook – Parr Center for Ethics, UNC Chapel Hill](https://nhseb.unc.edu/)
+- [Ethics Bowl Case Analysis and Moderation Guide – EthicsBowl.org](https://www.ethicsbowl.org/)
 
-* [A Guide to Writing in Ethical Reasoning 15](https://writingproject.fas.harvard.edu/file_url/156) (Harvard – includes case-based ethical reasoning and analysis structure) (PDF guide)
-* [A Framework for Ethical Decision Making](https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/) (Markkula Center – step-by-step process for analyzing ethical cases) (Procedural guide)
+## Argument Mapping & Logical Reconstruction
 
-### Develop your own normative framework
-
-* [How To Build Your Own Philosophy](https://themicrophilosopher.substack.com/p/how-to-build-your-own-philosophy) (Systematic method adaptable to normative frameworks) (Article / tutorial)
-
-### Write your own applied ethics proposal
-
-* [A Framework for Ethical Decision Making](https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/) (Markkula Center – procedural steps easily adapted to proposal writing in applied contexts) (Step-by-step guide)
-
-### Build your own deontological system
-
-* [How can I construct my own personal moral system? (Reddit / r/askphilosophy discussion)](https://www.reddit.com/r/askphilosophy/comments/x3slr5/how_can_i_construct_my_own_personal_moral_system) (*Advice applicable to building rule-based systems*)
-
-### Construct your own care ethics model
-
-No specific instructional tutorials are publicly available that guide the step-by-step construction of an original care ethics model.
-
-### Reconstruct your own contractarian scheme
-
-* [Calculating Consequences: The Utilitarian Approach to Ethics (Santa Clara University)](https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/calculating-consequences-the-utilitarian-approach) (*Step-by-step consequentialist method*)
-
-### Formulate your own moral principle
-
-* [How to Write a Personal Ethics Statement—And Why Every Professional Should](https://www.wgu.edu/blog/how-write-personal-ethics-statement-why-every-professional-should2202.html) (Step-by-step guide to formulating core ethical/moral principles) (Tutorial article)
-
-### Write your own ethical critique
-
-* [A Guide to Writing in Ethical Reasoning 15](https://writingproject.fas.harvard.edu/file_url/156) (Harvard – includes guidance on constructing critical ethical arguments and critiques) (PDF writing guide)
-
-These resources emphasize procedural and constructive approaches wherever possible. For categories with fewer or no dedicated guides, the activity is typically best supported by instructor feedback, peer workshops, or building directly on primary texts in moral philosophy.
+- [A Brief Guide to Argument Mapping – Shamik Dasgupta (UC Berkeley / Princeton)](https://shamik.net/)
+- [Integrating Digital Argument Mapping into Philosophical Inquiry – University of Queensland Critical Thinking Project](https://critical-thinking.project.uq.edu.au/)
+- [Using Computer-Aided Argument Mapping to Teach Moral Reasoning – eCampusOntario Studies in Critical Thinking](https://ecampusontario.pressbooks.pub/)
