@@ -1,52 +1,79 @@
 # Advanced Topics
 
-- [Advanced Metaethics and Moral Epistemology](#advanced-metaethics-and-moral-epistemology): Metaphysics of normativity, moral semantics, expressivism, error theory, and evolutionary debunking arguments.
-- [Moral Psychology, Agency, and Responsibility](#moral-psychology-agency-and-responsibility): Philosophical and empirical accounts of moral motivation, free will, reactive attitudes, and moral character.
-- [Applied, Biomedical, and Technology Ethics](#applied-biomedical-and-technology-ethics): Theoretical applications to healthcare, future generations, sentient non-humans, and autonomous artificial intelligence.
-- [Political Philosophy, Rights, and Distributive Justice](#political-philosophy-rights-and-distributive-justice): Normative structures of institutional justice, resource distribution, global borders, and the basis of rights.
-- [Critical, Relational, and Comparative Ethics](#critical-relational-and-comparative-ethics): Feminist ethics, epistemic injustice, African communitarianism, and classical East Asian philosophical traditions.
+Learners are encouraged to select one or two tracks aligned with their interests rather than attempting to complete all tracks.
+
+- [Advanced Metaethics and Moral Epistemology](#advanced-metaethics-and-moral-epistemology): Investigates the metaphysical status of normative properties, moral semantics, non-cognitivist expressivism, error theories, and the epistemic warrant of moral intuitions.
+- [Moral Psychology, Agency, and Responsibility](#moral-psychology-agency-and-responsibility): Explores the cognitive and affective foundations of moral judgment, motivational internalism, intentional action, weakness of the will, and accounts of moral blame.
+- [Applied, Biomedical, and Technology Ethics](#applied-biomedical-and-technology-ethics): Addresses moral problems in clinical medicine, duties to future generations, the badness of death, intergenerational climate harm, and artificial intelligence governance.
+- [Political Philosophy, Rights, and Distributive Justice](#political-philosophy-rights-and-distributive-justice): Analyzes institutional distribution principles, libertarian property entitlements, global economic duties, epistemic democratic legitimacy, and the ethics of defensive violence.
+- [Critical, Relational, and Comparative Ethics](#critical-relational-and-comparative-ethics): Examines non-ideal and non-Western ethical frameworks, including feminist care ethics, epistemic injustice, classical Chinese philosophy, Buddhist moral psychology, and African communitarianism.
 
 ## Advanced Metaethics and Moral Epistemology
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Robust Realism vs. Naturalistic Reductionism | Investigates whether normative properties are irreducible sui generis features of reality or identical to natural and empirical properties. | - *Taking Morality Seriously: A Defense of Robust Realism* by David Enoch (Oxford University Press)<br>- *Moral Realism: A Defence* by Russ Shafer-Landau (Oxford University Press)<br>- "Moral Realism" by Peter Railton (*The Philosophical Review*) |
-| Expressivism, Quasi-Realism, and Moral Semantics | Explores how non-cognitivists explain moral language without objective moral facts, resolving the Frege-Geach embedding problem. | - *Ruling Passions: A Theory of Practical Reasoning* by Simon Blackburn (Oxford University Press)<br>- *Wise Choices, Apt Feelings: A Theory of Normative Judgment* by Allan Gibbard (Harvard University Press)<br>- *Being Realistic about Reasons* by T. M. Scanlon (Oxford University Press) |
-| Moral Error Theory and Skepticism | Analyzes arguments that moral discourse presupposes objective values that do not exist, rendering all positive moral claims systematically false. | - *Ethics: Inventing Right and Wrong* by J. L. Mackie (Penguin Books)<br>- *The Myth of Morality* by Richard Joyce (Cambridge University Press)<br>- "Moral Skepticism and Moral Knowledge" by Sharon Street (*Philosophical Studies*) |
-| Evolutionary Debunking and Moral Epistemology | Evaluates whether evolutionary explanations of moral beliefs undermine the epistemic justification of moral intuitions. | - *Ethical Intuitionism* by Michael Huemer (Palgrave Macmillan)<br>- "A Darwinian Dilemma for Realist Theories of Value" by Sharon Street (*Philosophical Studies*)<br>- "Moral Knowledge by Induction" by Alison Hills (*Philosophy and Phenomenological Research*) |
+This track investigates whether moral values are objective features of reality, how moral terms function linguistically, and how humans can possess justified moral knowledge in the face of evolutionary debunking challenges.
+
+Robust Realism and Non-Naturalism: [Taking Morality Seriously: A Defense of Robust Realism (David Enoch, Oxford University Press)](https://books.google.com/books?isbn=9780199683178) - Defends non-naturalist moral realism by demonstrating the indispensability of irreducibly normative truths to deliberative practical reasoning.
+
+Expressivism and Moral Semantics: [Ruling Passions: A Theory of Practical Reasoning (Simon Blackburn, Oxford University Press)](https://books.google.com/books?isbn=9780199241392) - Develops quasi-realist expressivism to explain how projectivist moral claims earn the right to truth-evaluable propositional grammar without asserting objective facts.
+
+Moral Error Theory and Fictionalism: [The Myth of Morality (Richard Joyce, Cambridge University Press)](https://books.google.com/books?isbn=9780521036252) - Defends metaethical error theory and revolutionary fictionalism by arguing that the objective prescriptive authority presupposed by moral discourse is a biological illusion.
+
+Evolutionary Debunking and Moral Intuitionism: [Ethical Intuitionism (Michael Huemer, Palgrave Macmillan)](https://books.google.com/books?isbn=9781403989680) - Defends rationalist intuitionism and phenomenal conservatism against moral skepticism, subjectivism, and evolutionary debunking objections.
 
 ## Moral Psychology, Agency, and Responsibility
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Moral Motivation: Internalism vs. Externalism | Examines whether moral judgments are intrinsically motivating or if motivation requires an independent desire or affective state. | - *The Moral Problem* by Michael Smith (Wiley-Blackwell)<br>- *The Authority of Reason* by Jean Hampton (Cambridge University Press)<br>- "Internal and External Reasons" by Bernard Williams (in *Moral Luck*, Cambridge University Press) |
-| Reactive Attitudes and Moral Responsibility | Explores compatibilist and incompatibilist accounts of praise, blame, desert, and interpersonal participant attitudes. | - "Freedom and Resentment" by P. F. Strawson (*Proceedings of the British Academy*)<br>- *Responsibility and Control: A Theory of Moral Responsibility* by John Martin Fischer and Mark Ravizza (Cambridge University Press)<br>- *Living Without Free Will* by Derk Pereboom (Cambridge University Press) |
-| Practical Reason, Akrasia, and Action Theory | Investigates the mechanics of intentional action, practical deliberation, and the philosophical problem of acting against one's own best judgment. | - *Intention* by G. E. M. Anscombe (Harvard University Press)<br>- *Practical Reality* by Jonathan Dancy (Oxford University Press)<br>- "How is Weakness of the Will Possible?" by Donald Davidson (in *Essays on Actions and Events*, Oxford University Press) |
-| Empirical Moral Psychology and Situationism | Evaluates psychological evidence on dual-process moral intuition and situationist critiques against traditional virtue ethics. | - *Lack of Character: Personality and Moral Behavior* by John M. Doris (Cambridge University Press)<br>- "The Emotional Dog and Its Rational Tail" by Jonathan Haidt (*Psychological Review*)<br>- "An fMRI Investigation of Emotional Engagement in Moral Judgment" by Joshua D. Greene et al. (*Science*) |
+This track examines the psychological mechanics of moral action, the relationship between moral evaluation and motivation, the nature of intention, and the criteria under which agents can be held morally responsible.
+
+Moral Motivation and Practical Reasons: [The Moral Problem (Michael Smith, Wiley-Blackwell)](https://books.google.com/books?isbn=9780631192466) - Systematically analyzes the central trilemma between moral cognitivism, motivational internalism, and the Humean belief-desire theory of action.
+
+Agency, Volition, and Weakness of Will: [Moral Psychology (Richard Holton, MIT OpenCourseWare 24.120)](https://ocw.mit.edu/courses/24-120-moral-psychology-spring-2009/) - A complete university course examining akrasia, intention, free will, addiction, and how empirical psychology challenges traditional models of human agency.
+
+Reactive Attitudes and Moral Responsibility: [Responsibility and Control: A Theory of Moral Responsibility (John Martin Fischer & Mark Ravizza, Cambridge University Press)](https://books.google.com/books?isbn=9780521789585) - Articulates a semicompatibilist theory of moral responsibility grounded in reasons-responsive guidance control rather than alternate possibilities.
+
+Practical Reason and Intentional Action: [Intention (G. E. M. Anscombe, Harvard University Press)](https://books.google.com/books?isbn=9780674003996) - Foundational text in philosophical action theory analyzing intentional action under description and practical knowledge without observation.
+
+Empirical Ethics and Situationism: [Lack of Character: Personality and Moral Behavior (John M. Doris, Cambridge University Press)](https://books.google.com/books?isbn=9780521797047) - Uses experimental social psychology to mount an influential situationist critique against the robust character traits presupposed by Aristotelian virtue ethics.
 
 ## Applied, Biomedical, and Technology Ethics
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Advanced Bioethics and Personhood | Analyzes moral status boundaries, reproductive ethics, genetic enhancement, and the allocation of scarce lifesaving medical resources. | - *Principles of Biomedical Ethics* by Tom L. Beauchamp and James F. Childress (Oxford University Press)<br>- *Life's Dominion: An Argument About Abortion, Euthanasia, and Individual Freedom* by Ronald Dworkin (Vintage Books)<br>- [Introduction to Bioethics (Georgetown University / edX)](https://www.edx.org/learn/ethics/georgetown-university-introduction-to-bioethics) |
-| Population Ethics and Future Generations | Investigates moral duties to non-existent or potential future beings, tackling the non-identity problem and the Repugnant Conclusion. | - *Reasons and Persons* (Part IV) by Derek Parfit (Oxford University Press)<br>- *Theory and Weight: Population Ethics and the Value of Lives* by Gustaf Arrhenius (Oxford University Press)<br>- "Future Generations: Further Problems" by Derek Parfit (*Philosophy & Public Affairs*) |
-| Environmental Ethics and Moral Standing of Animals | Evaluates ecocentrism, biocentrism, animal rights frameworks, and intergenerational climate justice obligations. | - *Animal Liberation Now* by Peter Singer (HarperCollins)<br>- *The Case for Animal Rights* by Tom Regan (University of California Press)<br>- *Climate Matters: Ethics in a Warming World* by John Broome (W. W. Norton) |
-| Ethics of Artificial Intelligence and Machine Agency | Examines value alignment, algorithmic bias, moral responsibility in autonomous systems, and the moral status of artificial minds. | - *Human Compatible: Artificial Intelligence and the Problem of Control* by Stuart Russell (Viking)<br>- "The Ethics of Artificial Intelligence" by Nick Bostrom and Eliezer Yudkowsky (in *The Cambridge Handbook of Artificial Intelligence*)<br>- [Ethics of AI Course (University of Helsinki / MOOC.fi)](https://ethics-of-ai.mooc.fi/) |
+This track applies ethical principles to high-stakes practical domains, examining healthcare decision-making, the moral status of potential people, the badness of death, climate harms, and the moral status of artificial agents.
+
+Biomedical Ethics and Clinical Principles: [Introduction to Bioethics (Georgetown University / edX)](https://www.edx.org/learn/ethics/georgetown-university-introduction-to-bioethics) - Comprehensive university course exploring bedside ethics, informed consent, clinical autonomy, reproductive technologies, and healthcare allocation.
+
+Biomedical Ethics and Clinical Principles: [Principles of Biomedical Ethics (Tom L. Beauchamp & James F. Childress, Oxford University Press)](https://books.google.com/books?isbn=9780190640873) - The standard treatise establishing the four-principles framework of autonomy, nonmaleficence, beneficence, and justice across modern health professions.
+
+Population Ethics and Future Generations: [Reasons and Persons (Derek Parfit, Oxford University Press)](https://books.google.com/books?isbn=9780198249085) - Foundational monograph establishing modern population ethics, formulating the non-identity problem, the Repugnant Conclusion, and impersonal moral theory.
+
+The Philosophy of Death and Moral Status: [Death (Shelly Kagan, Open Yale Courses PHIL 176)](https://oyc.yale.edu/philosophy/phil-176) - Complete open video lecture series investigating personal identity, the deprivation account of death's badness, Lucretian symmetry, and the moral permissibility of suicide.
+
+Ethics of Artificial Intelligence: [Ethics of AI (University of Helsinki / MOOC.fi)](https://ethics-of-ai.mooc.fi/) - Applied open course addressing value alignment, algorithmic bias, accountability in autonomous systems, and the socio-technical governance of automated decisions.
+
+Climate Ethics and Intergenerational Harm: [Climate Matters: Ethics in a Warming World (John Broome, W. W. Norton)](https://books.google.com/books?isbn=9780393063363) - Analyzes the moral duties of private individuals and states regarding carbon emissions, discount rates for future lives, and intergenerational justice.
 
 ## Political Philosophy, Rights, and Distributive Justice
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Distributive Justice: Equality, Priority, and Sufficiency | Examines competing principles for allocating societal goods, comparing luck egalitarianism, prioritarianism, and libertarian entitlements. | - *A Theory of Justice* by John Rawls (Harvard University Press)<br>- *Anarchy, State, and Utopia* by Robert Nozick (Basic Books)<br>- "What is the Point of Equality?" by Elizabeth S. Anderson (*Ethics*)<br>- "Equality or Priority?" by Derek Parfit (*Ratio*) |
-| Global Justice, Borders, and Human Rights | Investigates whether obligations of justice apply across nation-state borders, addressing global poverty, sovereignty, and immigration. | - *The Law of Peoples* by John Rawls (Harvard University Press)<br>- *World Poverty and Human Rights* by Thomas Pogge (Polity Press)<br>- *The Strangers in Our Midst: The Political Philosophy of Immigration* by David Miller (Harvard University Press) |
-| Democratic Authority and Political Obligation | Evaluates the justification of state coercion, procedural versus epistemic accounts of democracy, and the limits of civil disobedience. | - *Democratic Authority: A Philosophical Framework* by David M. Estlund (Princeton University Press)<br>- *Political Liberalism* by John Rawls (Columbia University Press)<br>- *In Defense of Anarchism* by Robert Paul Wolff (University of California Press) |
-| Theories of Rights and Justifiable Harm | Analyzes the structural nature of rights (Hohfeldian analytical system) and the ethics of harming in self-defense and war. | - *Taking Rights Seriously* by Ronald Dworkin (Harvard University Press)<br>- *The Realm of Rights* by Judith Jarvis Thomson (Harvard University Press)<br>- *Killing in War* by Jeff McMahan (Oxford University Press) |
+This track investigates the moral legitimacy of coercive state institutions, the justification of property rights, international moral obligations across borders, and the conditions governing justifiable defensive harm.
+
+Distributive Justice and Entitlements: [Justice (Lucas Stanczyk, MIT OpenCourseWare 24.04J / 17.01J)](https://ocw.mit.edu/courses/24-04j-justice-spring-2012/) - Structured course lecture notes and recitations evaluating classical utilitarianism, Nozickian libertarian entitlements, and Rawlsian egalitarian liberalism.
+
+Distributive Justice and Entitlements: [Anarchy, State, and Utopia (Robert Nozick, Basic Books)](https://books.google.com/books?isbn=9780465051007) - The definitive libertarian defense of individual rights as side-constraints, the minimal state, and the historical entitlement theory of justice.
+
+Global Justice and Human Rights: [World Poverty and Human Rights (Thomas Pogge, Polity Press)](https://books.google.com/books?isbn=9780745641447) - Argues that affluent societies violate negative moral duties by imposing an unjust global institutional order that foreseeably causes severe global deprivation.
+
+Democratic Legitimacy and Epistemic Authority: [Democratic Authority: A Philosophical Framework (David M. Estlund, Princeton University Press)](https://books.google.com/books?isbn=9780691143248) - Formulates epistemic proceduralism, demonstrating how democratic legitimacy depends on a decision procedure's tendency to produce morally correct outcomes.
+
+Rights Theory and the Ethics of War: [Killing in War (Jeff McMahan, Oxford University Press)](https://books.google.com/books?isbn=9780199548668) - Overhauls classical just war theory by rejecting the moral equality of combatants and grounding liability to defensive harm in individual moral responsibility.
 
 ## Critical, Relational, and Comparative Ethics
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Feminist Ethics and the Ethics of Care | Challenges abstract, rule-based moral theories by centering relational vulnerability, dependency, and caring labor. | - *In a Different Voice: Psychological Theory and Women's Development* by Carol Gilligan (Harvard University Press)<br>- *The Ethics of Care: Personal, Political, and Global* by Virginia Held (Oxford University Press)<br>- *Moral Understandings: A Feminist Study in Ethics* by Margaret Urban Walker (Oxford University Press) |
-| Epistemic Injustice and Moral Oppression | Analyzes how power structures generate distinct harms against marginalized speakers through testimonial and hermeneutical injustice. | - *Epistemic Injustice: Power and the Ethics of Knowing* by Miranda Fricker (Oxford University Press)<br>- "White Ignorance" by Charles W. Mills (in *Race and Epistemologies of Ignorance*, SUNY Press)<br>- "Tracking Epistemic Violence, Tracking Practices of Silencing" by Kristie Dotson (*Hypatia*) |
-| Classical East Asian Ethics | Explores non-Western normative systems grounded in ritual propriety (li), humaneness (ren), non-action (wuwei), and Buddhist reductionism. | - *Confucian Role Ethics: A Vocabulary* by Roger T. Ames (University of Hawaii Press)<br>- *Ethics Without a Self: A Buddhist Approach to Moral Philosophy* by Mark Siderits (Columbia University Press)<br>- *Ethics in Early China: An Anthology* edited by Chris Fraser, Dan Robins, and Timothy O'Leary (Hong Kong University Press) |
-| African Relational Ethics and Ubuntu | Investigates communal moral frameworks where personhood and moral goodness are constituted through harmonious community relations. | - *African Relational Ethics: An Introduction to Ubuntu Moral Thought* by Thaddeus Metz (Routledge)<br>- *Tradition and Modernity: Philosophical Reflections on the African Experience* by Kwame Gyekye (Oxford University Press)<br>- "Toward an African Moral Theory" by Thaddeus Metz (*Journal of Political Philosophy*) |
+This track explores normative frameworks that critique individualistic, abstract Western paradigms by centering caring relationships, social situatedness, epistemic power dynamics, and non-Western philosophical traditions.
+
+Feminist Care Ethics: [The Ethics of Care: Personal, Political, and Global (Virginia Held, Oxford University Press)](https://books.google.com/books?isbn=9780195180992) - Develops care ethics into an autonomous normative theory centered on relational dependency, emotional attunement, and non-contractual social obligations.
+
+Epistemic Injustice and Moral Knowledge: [Epistemic Injustice: Power and the Ethics of Knowing (Miranda Fricker, Oxford University Press)](https://books.google.com/books?isbn=9780198237907) - Identifies testimonial and hermeneutical injustice as distinct moral wrongs occurring when prejudice deflates credibility or impairs collective interpretive resources.
+
+Classical Chinese Moral Philosophy: [Humanity and Nature in Chinese Thought (Chad Hansen, University of Hong Kong / edX)](https://www.edx.org/learn/philosophy/the-university-of-hong-kong-humanity-and-nature-in-chinese-thought) - Advanced open course examining classical Chinese ethics, contrasting the Confucian relational Dao with Mohist utilitarianism and Daoist naturalism.
+
+Buddhist Ethics and Moral Psychology: [Buddhism and Modern Psychology (Robert Wright, Princeton University / Coursera)](https://www.coursera.org/learn/science-of-meditation) - Comprehensive audit-mode course examining Buddhist moral philosophy, the illusion of the modular self, and cognitive mechanisms of craving and compassion.
+
+African Relational Ethics: [A Relational Moral Theory: African Ethics in and Beyond the Continent (Thaddeus Metz, Oxford University Press)](https://books.google.com/books?isbn=9780198748960) - Formulates a comprehensive analytic moral theory based on African Ubuntu traditions, defining moral rightness through communion, harmony, and mutual aid.

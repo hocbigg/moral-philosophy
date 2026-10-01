@@ -1,51 +1,65 @@
-# Great Readings
+# Great Readings in Moral Philosophy
 
-A curated collection of field-defining monographs, seminal philosophical essays, and paradigm-shifting breakthroughs in **Moral Philosophy**. These works illustrate how foundational thinkers uncover moral insights, construct rigorous conceptual frameworks, and challenge established orthodoxy.
+A curated directory of field-defining monographs, seminal philosophical essays, and paradigm-shifting contributions in moral philosophy.
 
-## Foundational Classics & Landmark Monographs
+## Normative Ethical Theory
 
-| Title | Author(s) | Type | Why It's Worth Reading |
-| --- | --- | --- | --- |
-| *Nicomachean Ethics* | Aristotle | Classical Treatise | Establishes teleological virtue ethics, articulating eudaimonia (human flourishing) as an activity of the soul expressing rational virtue. |
-| *Groundwork of the Metaphysics of Morals* | Immanuel Kant | Classical Treatise | Formulates the Categorical Imperative, establishing rational duty, universalizability, and human dignity as ends in themselves. |
-| *Utilitarianism* | John Stuart Mill | Classical Treatise | Systematizes classical consequentialism by defending qualitative hedonism, rule utility, and the principle of aggregate well-being. |
-| *A Theory of Justice* | John Rawls | Monograph | Revitalized contemporary political and moral philosophy through the Original Position, the Veil of Ignorance, and justice as fairness. |
-| *Reasons and Persons* | Derek Parfit | Monograph | Radically reshaped ethics, rationality, and personal identity while pioneering population ethics and the non-identity problem. |
+| Title | Author(s) |
+| --- | --- |
+| [*Nicomachean Ethics*](https://www.gutenberg.org/ebooks/8438) | Aristotle |
+| [*Groundwork of the Metaphysics of Morals*](https://www.gutenberg.org/ebooks/5682) | Immanuel Kant |
+| [*Utilitarianism*](https://www.gutenberg.org/ebooks/11224) | John Stuart Mill |
+| [*Modern Moral Philosophy*](https://www.jstor.org/stable/3749051) | G. E. M. Anscombe |
+| [*Reasons and Persons*](https://archive.org/details/trent_0116300637661) | Derek Parfit |
+| [*After Virtue: A Study in Moral Theory*](https://archive.org/details/aftervirtuestudy0000maci) | Alasdair MacIntyre |
+| [*Ethics and the Limits of Philosophy*](https://books.google.com/books?isbn=9780415610148) | Bernard Williams |
 
-## Seminal Papers & Paradigm-Shifting Essays
+## Metaethics and Moral Epistemology
 
-| Title | Author(s) | Type | Why It's Worth Reading |
-| --- | --- | --- | --- |
-| *Modern Moral Philosophy* | G. E. M. Anscombe | Seminal Paper | Critiqued consequentialism and deontology for retaining a legalistic moral "ought" without a lawgiver, igniting the modern revival of virtue ethics. |
-| *Famine, Affluence, and Morality* | Peter Singer | Seminal Paper | Transformed applied ethics using the drowning child analogy to argue that affluent individuals have a stringent duty to prevent severe global poverty. |
-| *Freedom and Resentment* | P. F. Strawson | Seminal Paper | Reoriented the free will and responsibility debate away from metaphysical determinism toward interpersonal reactive attitudes like resentment, gratitude, and forgiveness. |
-| *A Defense of Abortion* | Judith Jarvis Thomson | Seminal Paper | Introduced the famous unconscious violinist thought experiment, demonstrating that the right to life does not automatically confer the right to use another person's body. |
-| *The Schizophrenia of Modern Ethical Theories* | Michael Stocker | Seminal Paper | Exposed the psychological alienation of modern normative systems that force a rift between an agent's moral reasons and their actual emotional motivations. |
-| *Moral Luck* | Thomas Nagel | Seminal Essay | Directly challenged the Kantian premise of moral immunity to circumstance by illustrating how factors beyond an agent's control influence moral praise and blame. |
+| Title | Author(s) |
+| --- | --- |
+| [*Principia Ethica*](https://www.gutenberg.org/ebooks/53430) | G. E. Moore |
+| [*Ethics: Inventing Right and Wrong*](https://books.google.com/books?isbn=9780140135589) | J. L. Mackie |
+| [*The Moral Problem*](https://books.google.com/books?isbn=9780631192466) | Michael Smith |
+| [*Ruling Passions: A Theory of Practical Reasoning*](https://books.google.com/books?isbn=9780199241392) | Simon Blackburn |
+| [*Taking Morality Seriously: A Defense of Robust Realism*](https://books.google.com/books?isbn=9780199683178) | David Enoch |
 
-## Metaethics, Normativity & Moral Psychology
+## Moral Psychology, Agency, and Responsibility
 
-| Title | Author(s) | Type | Why It's Worth Reading |
-| --- | --- | --- | --- |
-| *Ethics: Inventing Right and Wrong* | J. L. Mackie | Monograph | Formulated the influential moral error theory and the argument from queerness, asserting that objective moral values do not exist. |
-| *The Moral Problem* | Michael Smith | Monograph | Systematically articulates and resolves the central metaethical tension between moral cognitivism, motivational internalism, and the Humean theory of motivation. |
-| *Taking Morality Seriously: A Defense of Robust Realism* | David Enoch | Monograph | Defends non-naturalist moral realism by showing that irreducible normative truths are indispensable to deliberative practical reasoning. |
-| *Ruling Passions: A Theory of Practical Reasoning* | Simon Blackburn | Monograph | Articulates quasi-realism, explaining how expressivism can vindicate realist-sounding moral language and practices without realist metaphysical baggage. |
+| Title | Author(s) |
+| --- | --- |
+| [*Freedom and Resentment*](https://www.thebritishacademy.ac.uk/publishing/proceedings-british-academy/48/strawson/) | P. F. Strawson |
+| [*The Schizophrenia of Modern Ethical Theories*](https://www.jstor.org/stable/2025782) | Michael Stocker |
+| [*Moral Luck*](https://www.jstor.org/stable/4106826) | Thomas Nagel |
+| [*Intention*](https://books.google.com/books?isbn=9780674003996) | G. E. M. Anscombe |
+| [*Lack of Character: Personality and Moral Behavior*](https://books.google.com/books?isbn=9780521797047) | John M. Doris |
 
-## Applied Ethics, Bioethics & Distributive Justice
+## Applied and Biomedical Ethics
 
-| Title | Author(s) | Type | Why It's Worth Reading |
-| --- | --- | --- | --- |
-| *Animal Liberation* | Peter Singer | Monograph | Founded the modern animal liberation movement by demonstrating that speciesism is an arbitrary and morally indefensible form of discrimination. |
-| *Principles of Biomedical Ethics* | Tom L. Beauchamp and James F. Childress | Monograph | Established the foundational four-principles framework (autonomy, non-maleficence, beneficence, and justice) that governs modern clinical bioethics. |
-| *Anarchy, State, and Utopia* | Robert Nozick | Monograph | The classic libertarian response to Rawlsian egalitarianism, grounding justice in historical entitlements, self-ownership, and individual side-constraints. |
-| *Climate Matters: Ethics in a Warming World* | John Broome | Monograph | Blends economics and analytic moral philosophy to rigorously examine individual and governmental moral obligations regarding greenhouse gas emissions. |
+| Title | Author(s) |
+| --- | --- |
+| [*Famine, Affluence, and Morality*](https://www.jstor.org/stable/2265052) | Peter Singer |
+| [*A Defense of Abortion*](https://www.jstor.org/stable/2265091) | Judith Jarvis Thomson |
+| [*Animal Liberation*](https://archive.org/details/animalliberation0000sing_f1z7) | Peter Singer |
+| [*Principles of Biomedical Ethics*](https://books.google.com/books?isbn=9780190640873) | Tom L. Beauchamp & James F. Childress |
+| [*Climate Matters: Ethics in a Warming World*](https://books.google.com/books?isbn=9780393063363) | John Broome |
 
-## Critical Perspectives, Relational Ethics & Epistemic Justice
+## Political Philosophy and Distributive Justice
 
-| Title | Author(s) | Type | Why It's Worth Reading |
-| --- | --- | --- | --- |
-| *After Virtue: A Study in Moral Theory* | Alasdair MacIntyre | Monograph | Diagnosed modern moral discourse as fragmented and incoherent, advocating a return to Aristotelian narrative unity, tradition, and teleological practices. |
-| *In a Different Voice* | Carol Gilligan | Monograph | Challenged male-centric psychological models of moral development, inaugurating the relational framework of the feminist ethics of care. |
-| *Epistemic Injustice: Power and the Ethics of Knowing* | Miranda Fricker | Monograph | Bridges ethics and epistemology to uncover testimonial and hermeneutical injustices inflicted on marginalized agents by social prejudice. |
-| *The Racial Contract* | Charles W. Mills | Monograph | Demonstrates how classical Western social contract theory operates as an exclusionary racial framework designed to enforce racial hierarchy and white supremacy. |
+| Title | Author(s) |
+| --- | --- |
+| [*A Theory of Justice*](https://archive.org/details/theoryofjustice0000rawl) | John Rawls |
+| [*Anarchy, State, and Utopia*](https://archive.org/details/robert-nozick-anarchy-state-and-utopia) | Robert Nozick |
+| [*World Poverty and Human Rights*](https://books.google.com/books?isbn=9780745641447) | Thomas Pogge |
+| [*Democratic Authority: A Philosophical Framework*](https://books.google.com/books?isbn=9780691143248) | David M. Estlund |
+| [*Killing in War*](https://books.google.com/books?isbn=9780199548668) | Jeff McMahan |
+
+## Critical, Relational, and Epistemic Ethics
+
+| Title | Author(s) |
+| --- | --- |
+| [*In a Different Voice: Psychological Theory and Women's Development*](https://archive.org/details/indifferentvoice00gill_0) | Carol Gilligan |
+| [*The Ethics of Care: Personal, Political, and Global*](https://books.google.com/books?isbn=9780195180992) | Virginia Held |
+| [*Epistemic Injustice: Power and the Ethics of Knowing*](https://books.google.com/books?isbn=9780198237907) | Miranda Fricker |
+| [*The Racial Contract*](https://books.google.com/books?isbn=9780801484636) | Charles W. Mills |
+| [*A Relational Moral Theory: African Ethics in and Beyond the Continent*](https://books.google.com/books?isbn=9780198748960) | Thaddeus Metz |
