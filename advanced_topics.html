@@ -1,195 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/moral-philosophy/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/moral-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/moral-philosophy/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/moral-philosophy/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/moral-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/moral-philosophy/">Moral-Philosophy</a>
-<a href="/moral-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/moral-philosophy/projects.html">Projects</a>
-<a href="/moral-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/moral-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/moral-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/moral-philosophy/">Moral Philosophy</a></li>
+      <li><a href="/moral-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/moral-philosophy/projects.html">Projects</a></li>
+      <li><a href="/moral-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/moral-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/moral-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
+<p>Learners are encouraged to select one or two tracks aligned with their interests rather than attempting to complete all tracks.</p>
 <ul>
-<li><a href="#foundations-supporting-ethics">Foundations Supporting Ethics</a></li>
-<li><a href="#moral-psychology-and-agency">Moral Psychology and Agency</a></li>
-<li><a href="#applied-ethics">Applied Ethics</a></li>
-<li><a href="#critical-and-alternative-ethical-frameworks">Critical and Alternative Ethical Frameworks</a></li>
-<li><a href="#interdisciplinary-and-comparative-ethics">Interdisciplinary and Comparative Ethics</a></li>
+<li><a href="#advanced-metaethics-and-moral-epistemology">Advanced Metaethics and Moral Epistemology</a>: Investigates the metaphysical status of normative properties, moral semantics, non-cognitivist expressivism, error theories, and the epistemic warrant of moral intuitions.</li>
+<li><a href="#moral-psychology-agency-and-responsibility">Moral Psychology, Agency, and Responsibility</a>: Explores the cognitive and affective foundations of moral judgment, motivational internalism, intentional action, weakness of the will, and accounts of moral blame.</li>
+<li><a href="#applied-biomedical-and-technology-ethics">Applied, Biomedical, and Technology Ethics</a>: Addresses moral problems in clinical medicine, duties to future generations, the badness of death, intergenerational climate harm, and artificial intelligence governance.</li>
+<li><a href="#political-philosophy-rights-and-distributive-justice">Political Philosophy, Rights, and Distributive Justice</a>: Analyzes institutional distribution principles, libertarian property entitlements, global economic duties, epistemic democratic legitimacy, and the ethics of defensive violence.</li>
+<li><a href="#critical-relational-and-comparative-ethics">Critical, Relational, and Comparative Ethics</a>: Examines non-ideal and non-Western ethical frameworks, including feminist care ethics, epistemic injustice, classical Chinese philosophy, Buddhist moral psychology, and African communitarianism.</li>
 </ul>
-<p>The remaining sections are optional extensions. They become much easier and more meaningful after you have finished the Core.</p>
-<p>You can pick and choose among them based on what interests you most:</p>
-<ul>
-<li><strong>Foundations Supporting Ethics</strong>: Choose this if you want to understand the deeper philosophical questions about knowledge, free will, and responsibility that lie underneath ethics.</li>
-<li><strong>Moral Psychology and Agency</strong>: Pick this if you are curious about the human side: why people actually behave morally (or don’t), emotions, character, and blame.</li>
-<li><strong>Applied Ethics</strong>: Go here if you want to see how ethical theories apply to concrete real-world issues (medicine, environment, business).</li>
-<li><strong>Critical and Alternative Ethical Frameworks</strong>: Choose this track if you are interested in perspectives that challenge or expand the traditional Western approaches (care ethics, feminism, existentialism).</li>
-<li><strong>Interdisciplinary and Comparative Ethics</strong>: Select this if you care about the connection between ethics and politics, technology/AI, or non-Western moral traditions.</li>
-</ul>
-<h2 id="foundations-supporting-ethics">Foundations Supporting Ethics</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Epistemology (Ethical Knowledge)</td>
-<td>Clarifies moral knowledge, disagreement, and justification.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/moral-epistemology/">Stanford Encyclopedia of Philosophy: Moral Epistemology</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/philosophy">Introduction to Philosophy (Edinburgh – Coursera)</a> (free to audit; covers epistemology)</td>
-</tr>
-<tr>
-<td>Metaphysics of Agency</td>
-<td>Grounds responsibility, free will, and personal identity.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/freewill/">Stanford Encyclopedia of Philosophy: Free Will</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/death/phil-176">Philosophy of Death (Yale Open Courses – selected lectures)</a> (free; relevant to agency and mortality)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="moral-psychology-and-agency">Moral Psychology and Agency</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Moral Motivation &amp; Emotion</td>
-<td>Explains why people act morally or fail to do so.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/moral-psych-emp/">Stanford Encyclopedia of Philosophy: Moral Psychology</a> (empirical approaches)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/philosophy/phil-181">Philosophy and the Science of Human Nature (Yale)</a></td>
-</tr>
-<tr>
-<td>Responsibility and Character</td>
-<td>Connects ethics to blame, praise, and self-formation.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/moral-responsibility/">Stanford Encyclopedia of Philosophy: Moral Responsibility</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/death/phil-176">Philosophy of Death (Yale – selected lectures)</a> (free; relevant to responsibility)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="applied-ethics">Applied Ethics</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bioethics</td>
-<td>Applies theory to medicine and life sciences.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://bioethics.georgetown.edu/">Georgetown Bioethics Materials</a> (free resources)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/ethics/georgetown-university-introduction-to-bioethics">Introduction to Bioethics (Georgetown – edX)</a></td>
-</tr>
-<tr>
-<td>Environmental Ethics</td>
-<td>Addresses obligations to nature and future generations.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/ethics-environmental/">Stanford Encyclopedia of Philosophy: Environmental Ethics</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/environmental-management-ethics">Environmental Management &amp; Ethics (Coursera – DTU)</a></td>
-</tr>
-<tr>
-<td>Business &amp; Economic Ethics</td>
-<td>Examines fairness, markets, and responsibility.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/ethics-business/">Stanford Encyclopedia of Philosophy: Business Ethics</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/business-ethics">Global Impact: Business Ethics (Coursera – UIUC)</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="critical-and-alternative-ethical-frameworks">Critical and Alternative Ethical Frameworks</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Feminist Ethics &amp; Ethics of Care</td>
-<td>Challenges abstract moral theory and emphasizes relationships.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/feminism-ethics/">Stanford Encyclopedia of Philosophy: Feminist Ethics</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/feminism-social-justice">Feminism and Social Justice (Coursera – UCSC)</a></td>
-</tr>
-<tr>
-<td>Existentialist Ethics</td>
-<td>Explores freedom, authenticity, and responsibility.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/existentialism/">Stanford Encyclopedia of Philosophy: Existentialism</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://alison.com/course/an-introduction-to-the-principles-of-existentialism">Introduction to Existentialism (Alison – free course)</a> (fully free)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="interdisciplinary-and-comparative-ethics">Interdisciplinary and Comparative Ethics</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Political Philosophy and Justice</td>
-<td>Connects ethics with institutions and social order.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/justice/">Stanford Encyclopedia of Philosophy: Justice</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/moral-politics">Moral Foundations of Politics (Coursera – Yale)</a></td>
-</tr>
-<tr>
-<td>Ethics of Technology and AI</td>
-<td>Addresses emerging moral risks and governance.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/ethics-ai/">Stanford Encyclopedia of Philosophy: Ethics of Artificial Intelligence and Robotics</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ethics-of-ai.mooc.fi/">Ethics of AI (University of Helsinki – free MOOC)</a> (fully free)</td>
-</tr>
-<tr>
-<td>Comparative Ethics (East–West)</td>
-<td>Broadens moral understanding beyond Western frameworks.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/comparphil-chiwes/">Stanford Encyclopedia of Philosophy: Comparative Philosophy: Chinese and Western</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/">Comparative Philosophy lectures (Yale – related content)</a> (free; use related philosophy courses)</td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="advanced-metaethics-and-moral-epistemology">Advanced Metaethics and Moral Epistemology</h2>
+<p>This track investigates whether moral values are objective features of reality, how moral terms function linguistically, and how humans can possess justified moral knowledge in the face of evolutionary debunking challenges.</p>
+<p>Robust Realism and Non-Naturalism: <a href="https://books.google.com/books?isbn=9780199683178" target="_blank" rel="noopener noreferrer">Taking Morality Seriously: A Defense of Robust Realism (David Enoch, Oxford University Press)</a> - Defends non-naturalist moral realism by demonstrating the indispensability of irreducibly normative truths to deliberative practical reasoning.</p>
+<p>Expressivism and Moral Semantics: <a href="https://books.google.com/books?isbn=9780199241392" target="_blank" rel="noopener noreferrer">Ruling Passions: A Theory of Practical Reasoning (Simon Blackburn, Oxford University Press)</a> - Develops quasi-realist expressivism to explain how projectivist moral claims earn the right to truth-evaluable propositional grammar without asserting objective facts.</p>
+<p>Moral Error Theory and Fictionalism: <a href="https://books.google.com/books?isbn=9780521036252" target="_blank" rel="noopener noreferrer">The Myth of Morality (Richard Joyce, Cambridge University Press)</a> - Defends metaethical error theory and revolutionary fictionalism by arguing that the objective prescriptive authority presupposed by moral discourse is a biological illusion.</p>
+<p>Evolutionary Debunking and Moral Intuitionism: <a href="https://books.google.com/books?isbn=9781403989680" target="_blank" rel="noopener noreferrer">Ethical Intuitionism (Michael Huemer, Palgrave Macmillan)</a> - Defends rationalist intuitionism and phenomenal conservatism against moral skepticism, subjectivism, and evolutionary debunking objections.</p>
+<h2 id="moral-psychology-agency-and-responsibility">Moral Psychology, Agency, and Responsibility</h2>
+<p>This track examines the psychological mechanics of moral action, the relationship between moral evaluation and motivation, the nature of intention, and the criteria under which agents can be held morally responsible.</p>
+<p>Moral Motivation and Practical Reasons: <a href="https://books.google.com/books?isbn=9780631192466" target="_blank" rel="noopener noreferrer">The Moral Problem (Michael Smith, Wiley-Blackwell)</a> - Systematically analyzes the central trilemma between moral cognitivism, motivational internalism, and the Humean belief-desire theory of action.</p>
+<p>Agency, Volition, and Weakness of Will: <a href="https://ocw.mit.edu/courses/24-120-moral-psychology-spring-2009/" target="_blank" rel="noopener noreferrer">Moral Psychology (Richard Holton, MIT OpenCourseWare 24.120)</a> - A complete university course examining akrasia, intention, free will, addiction, and how empirical psychology challenges traditional models of human agency.</p>
+<p>Reactive Attitudes and Moral Responsibility: <a href="https://books.google.com/books?isbn=9780521789585" target="_blank" rel="noopener noreferrer">Responsibility and Control: A Theory of Moral Responsibility (John Martin Fischer &amp; Mark Ravizza, Cambridge University Press)</a> - Articulates a semicompatibilist theory of moral responsibility grounded in reasons-responsive guidance control rather than alternate possibilities.</p>
+<p>Practical Reason and Intentional Action: <a href="https://books.google.com/books?isbn=9780674003996" target="_blank" rel="noopener noreferrer">Intention (G. E. M. Anscombe, Harvard University Press)</a> - Foundational text in philosophical action theory analyzing intentional action under description and practical knowledge without observation.</p>
+<p>Empirical Ethics and Situationism: <a href="https://books.google.com/books?isbn=9780521797047" target="_blank" rel="noopener noreferrer">Lack of Character: Personality and Moral Behavior (John M. Doris, Cambridge University Press)</a> - Uses experimental social psychology to mount an influential situationist critique against the robust character traits presupposed by Aristotelian virtue ethics.</p>
+<h2 id="applied-biomedical-and-technology-ethics">Applied, Biomedical, and Technology Ethics</h2>
+<p>This track applies ethical principles to high-stakes practical domains, examining healthcare decision-making, the moral status of potential people, the badness of death, climate harms, and the moral status of artificial agents.</p>
+<p>Biomedical Ethics and Clinical Principles: <a href="https://www.edx.org/learn/ethics/georgetown-university-introduction-to-bioethics" target="_blank" rel="noopener noreferrer">Introduction to Bioethics (Georgetown University / edX)</a> - Comprehensive university course exploring bedside ethics, informed consent, clinical autonomy, reproductive technologies, and healthcare allocation.</p>
+<p>Biomedical Ethics and Clinical Principles: <a href="https://books.google.com/books?isbn=9780190640873" target="_blank" rel="noopener noreferrer">Principles of Biomedical Ethics (Tom L. Beauchamp &amp; James F. Childress, Oxford University Press)</a> - The standard treatise establishing the four-principles framework of autonomy, nonmaleficence, beneficence, and justice across modern health professions.</p>
+<p>Population Ethics and Future Generations: <a href="https://books.google.com/books?isbn=9780198249085" target="_blank" rel="noopener noreferrer">Reasons and Persons (Derek Parfit, Oxford University Press)</a> - Foundational monograph establishing modern population ethics, formulating the non-identity problem, the Repugnant Conclusion, and impersonal moral theory.</p>
+<p>The Philosophy of Death and Moral Status: <a href="https://oyc.yale.edu/philosophy/phil-176" target="_blank" rel="noopener noreferrer">Death (Shelly Kagan, Open Yale Courses PHIL 176)</a> - Complete open video lecture series investigating personal identity, the deprivation account of death's badness, Lucretian symmetry, and the moral permissibility of suicide.</p>
+<p>Ethics of Artificial Intelligence: <a href="https://ethics-of-ai.mooc.fi/" target="_blank" rel="noopener noreferrer">Ethics of AI (University of Helsinki / MOOC.fi)</a> - Applied open course addressing value alignment, algorithmic bias, accountability in autonomous systems, and the socio-technical governance of automated decisions.</p>
+<p>Climate Ethics and Intergenerational Harm: <a href="https://books.google.com/books?isbn=9780393063363" target="_blank" rel="noopener noreferrer">Climate Matters: Ethics in a Warming World (John Broome, W. W. Norton)</a> - Analyzes the moral duties of private individuals and states regarding carbon emissions, discount rates for future lives, and intergenerational justice.</p>
+<h2 id="political-philosophy-rights-and-distributive-justice">Political Philosophy, Rights, and Distributive Justice</h2>
+<p>This track investigates the moral legitimacy of coercive state institutions, the justification of property rights, international moral obligations across borders, and the conditions governing justifiable defensive harm.</p>
+<p>Distributive Justice and Entitlements: <a href="https://ocw.mit.edu/courses/24-04j-justice-spring-2012/" target="_blank" rel="noopener noreferrer">Justice (Lucas Stanczyk, MIT OpenCourseWare 24.04J / 17.01J)</a> - Structured course lecture notes and recitations evaluating classical utilitarianism, Nozickian libertarian entitlements, and Rawlsian egalitarian liberalism.</p>
+<p>Distributive Justice and Entitlements: <a href="https://books.google.com/books?isbn=9780465051007" target="_blank" rel="noopener noreferrer">Anarchy, State, and Utopia (Robert Nozick, Basic Books)</a> - The definitive libertarian defense of individual rights as side-constraints, the minimal state, and the historical entitlement theory of justice.</p>
+<p>Global Justice and Human Rights: <a href="https://books.google.com/books?isbn=9780745641447" target="_blank" rel="noopener noreferrer">World Poverty and Human Rights (Thomas Pogge, Polity Press)</a> - Argues that affluent societies violate negative moral duties by imposing an unjust global institutional order that foreseeably causes severe global deprivation.</p>
+<p>Democratic Legitimacy and Epistemic Authority: <a href="https://books.google.com/books?isbn=9780691143248" target="_blank" rel="noopener noreferrer">Democratic Authority: A Philosophical Framework (David M. Estlund, Princeton University Press)</a> - Formulates epistemic proceduralism, demonstrating how democratic legitimacy depends on a decision procedure's tendency to produce morally correct outcomes.</p>
+<p>Rights Theory and the Ethics of War: <a href="https://books.google.com/books?isbn=9780199548668" target="_blank" rel="noopener noreferrer">Killing in War (Jeff McMahan, Oxford University Press)</a> - Overhauls classical just war theory by rejecting the moral equality of combatants and grounding liability to defensive harm in individual moral responsibility.</p>
+<h2 id="critical-relational-and-comparative-ethics">Critical, Relational, and Comparative Ethics</h2>
+<p>This track explores normative frameworks that critique individualistic, abstract Western paradigms by centering caring relationships, social situatedness, epistemic power dynamics, and non-Western philosophical traditions.</p>
+<p>Feminist Care Ethics: <a href="https://books.google.com/books?isbn=9780195180992" target="_blank" rel="noopener noreferrer">The Ethics of Care: Personal, Political, and Global (Virginia Held, Oxford University Press)</a> - Develops care ethics into an autonomous normative theory centered on relational dependency, emotional attunement, and non-contractual social obligations.</p>
+<p>Epistemic Injustice and Moral Knowledge: <a href="https://books.google.com/books?isbn=9780198237907" target="_blank" rel="noopener noreferrer">Epistemic Injustice: Power and the Ethics of Knowing (Miranda Fricker, Oxford University Press)</a> - Identifies testimonial and hermeneutical injustice as distinct moral wrongs occurring when prejudice deflates credibility or impairs collective interpretive resources.</p>
+<p>Classical Chinese Moral Philosophy: <a href="https://www.edx.org/learn/philosophy/the-university-of-hong-kong-humanity-and-nature-in-chinese-thought" target="_blank" rel="noopener noreferrer">Humanity and Nature in Chinese Thought (Chad Hansen, University of Hong Kong / edX)</a> - Advanced open course examining classical Chinese ethics, contrasting the Confucian relational Dao with Mohist utilitarianism and Daoist naturalism.</p>
+<p>Buddhist Ethics and Moral Psychology: <a href="https://www.coursera.org/learn/science-of-meditation" target="_blank" rel="noopener noreferrer">Buddhism and Modern Psychology (Robert Wright, Princeton University / Coursera)</a> - Comprehensive audit-mode course examining Buddhist moral philosophy, the illusion of the modular self, and cognitive mechanisms of craving and compassion.</p>
+<p>African Relational Ethics: <a href="https://books.google.com/books?isbn=9780198748960" target="_blank" rel="noopener noreferrer">A Relational Moral Theory: African Ethics in and Beyond the Continent (Thaddeus Metz, Oxford University Press)</a> - Formulates a comprehensive analytic moral theory based on African Ubuntu traditions, defining moral rightness through communion, harmony, and mutual aid.</p>
+    </article>
+  </main>
 
 </body>
 </html>

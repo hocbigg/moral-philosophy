@@ -1,104 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/moral-philosophy/style.css">
-<meta name="description" content="">
+  <title>Great Readings in Moral Philosophy</title>
+  <meta name="description" content="Great Readings in Moral Philosophy curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/moral-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/moral-philosophy/extras/readings.html">
+  <meta property="og:title" content="Great Readings in Moral Philosophy">
+  <meta property="og:description" content="Great Readings in Moral Philosophy curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/moral-philosophy/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/moral-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/moral-philosophy/">Moral-Philosophy</a>
-<a href="/moral-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/moral-philosophy/projects.html">Projects</a>
-<a href="/moral-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/moral-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/moral-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/moral-philosophy/">Moral Philosophy</a></li>
+      <li><a href="/moral-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/moral-philosophy/projects.html">Projects</a></li>
+      <li><a href="/moral-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/moral-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/moral-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on Moral Philosophy (Ethics).
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="normative-ethics">Normative Ethics</h2>
-<table>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-readings-in-moral-philosophy">Great Readings in Moral Philosophy</h1>
+<p>A curated directory of field-defining monographs, seminal philosophical essays, and paradigm-shifting contributions in moral philosophy.</p>
+<h2 id="normative-ethical-theory">Normative Ethical Theory</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Elements-Moral-Philosophy-James-Rachels/dp/0078119065">The Elements of Moral Philosophy</a></td>
-<td style="text-align: center;">James Rachels and Stuart Rachels</td>
+<td><a href="https://www.gutenberg.org/ebooks/8438" target="_blank" rel="noopener noreferrer"><em>Nicomachean Ethics</em></a></td>
+<td>Aristotle</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Ethics-History-Theory-Contemporary-Issues/dp/0190209801">Ethics: History, Theory, and Contemporary Issues</a></td>
-<td style="text-align: center;">Steven M. Cahn and Peter Markie</td>
+<td><a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener noreferrer"><em>Groundwork of the Metaphysics of Morals</em></a></td>
+<td>Immanuel Kant</td>
+</tr>
+<tr>
+<td><a href="https://www.gutenberg.org/ebooks/11224" target="_blank" rel="noopener noreferrer"><em>Utilitarianism</em></a></td>
+<td>John Stuart Mill</td>
+</tr>
+<tr>
+<td><a href="https://www.jstor.org/stable/3749051" target="_blank" rel="noopener noreferrer"><em>Modern Moral Philosophy</em></a></td>
+<td>G. E. M. Anscombe</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/trent_0116300637661" target="_blank" rel="noopener noreferrer"><em>Reasons and Persons</em></a></td>
+<td>Derek Parfit</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/aftervirtuestudy0000maci" target="_blank" rel="noopener noreferrer"><em>After Virtue: A Study in Moral Theory</em></a></td>
+<td>Alasdair MacIntyre</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780415610148" target="_blank" rel="noopener noreferrer"><em>Ethics and the Limits of Philosophy</em></a></td>
+<td>Bernard Williams</td>
 </tr>
 </tbody>
-</table>
-<h2 id="applied-ethics">Applied Ethics</h2>
-<table>
+</table></div>
+<h2 id="metaethics-and-moral-epistemology">Metaethics and Moral Epistemology</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Practical-Ethics-Peter-Singer/dp/0521707684">Practical Ethics</a></td>
-<td style="text-align: center;">Peter Singer</td>
+<td><a href="https://www.gutenberg.org/ebooks/53430" target="_blank" rel="noopener noreferrer"><em>Principia Ethica</em></a></td>
+<td>G. E. Moore</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.thelifeyoucansave.org/the-book/">The Life You Can Save</a> (free online)</td>
-<td style="text-align: center;">Peter Singer</td>
+<td><a href="https://books.google.com/books?isbn=9780140135589" target="_blank" rel="noopener noreferrer"><em>Ethics: Inventing Right and Wrong</em></a></td>
+<td>J. L. Mackie</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780631192466" target="_blank" rel="noopener noreferrer"><em>The Moral Problem</em></a></td>
+<td>Michael Smith</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780199241392" target="_blank" rel="noopener noreferrer"><em>Ruling Passions: A Theory of Practical Reasoning</em></a></td>
+<td>Simon Blackburn</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780199683178" target="_blank" rel="noopener noreferrer"><em>Taking Morality Seriously: A Defense of Robust Realism</em></a></td>
+<td>David Enoch</td>
 </tr>
 </tbody>
-</table>
-<h2 id="metaethics-and-advanced-theory">Metaethics and Advanced Theory</h2>
-<table>
+</table></div>
+<h2 id="moral-psychology-agency-and-responsibility">Moral Psychology, Agency, and Responsibility</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/ethicsinventingr0000mack">Ethics: Inventing Right and Wrong</a> (borrow on Archive.org)</td>
-<td style="text-align: center;">John L. Mackie</td>
+<td><a href="https://www.thebritishacademy.ac.uk/publishing/proceedings-british-academy/48/strawson/" target="_blank" rel="noopener noreferrer"><em>Freedom and Resentment</em></a></td>
+<td>P. F. Strawson</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/After-Virtue-Study-Moral-Theory/dp/0268035040">After Virtue</a></td>
-<td style="text-align: center;">Alasdair MacIntyre</td>
+<td><a href="https://www.jstor.org/stable/2025782" target="_blank" rel="noopener noreferrer"><em>The Schizophrenia of Modern Ethical Theories</em></a></td>
+<td>Michael Stocker</td>
+</tr>
+<tr>
+<td><a href="https://www.jstor.org/stable/4106826" target="_blank" rel="noopener noreferrer"><em>Moral Luck</em></a></td>
+<td>Thomas Nagel</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780674003996" target="_blank" rel="noopener noreferrer"><em>Intention</em></a></td>
+<td>G. E. M. Anscombe</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780521797047" target="_blank" rel="noopener noreferrer"><em>Lack of Character: Personality and Moral Behavior</em></a></td>
+<td>John M. Doris</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="applied-and-biomedical-ethics">Applied and Biomedical Ethics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.jstor.org/stable/2265052" target="_blank" rel="noopener noreferrer"><em>Famine, Affluence, and Morality</em></a></td>
+<td>Peter Singer</td>
+</tr>
+<tr>
+<td><a href="https://www.jstor.org/stable/2265091" target="_blank" rel="noopener noreferrer"><em>A Defense of Abortion</em></a></td>
+<td>Judith Jarvis Thomson</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/animalliberation0000sing_f1z7" target="_blank" rel="noopener noreferrer"><em>Animal Liberation</em></a></td>
+<td>Peter Singer</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780190640873" target="_blank" rel="noopener noreferrer"><em>Principles of Biomedical Ethics</em></a></td>
+<td>Tom L. Beauchamp &amp; James F. Childress</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780393063363" target="_blank" rel="noopener noreferrer"><em>Climate Matters: Ethics in a Warming World</em></a></td>
+<td>John Broome</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="political-philosophy-and-distributive-justice">Political Philosophy and Distributive Justice</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://archive.org/details/theoryofjustice0000rawl" target="_blank" rel="noopener noreferrer"><em>A Theory of Justice</em></a></td>
+<td>John Rawls</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/robert-nozick-anarchy-state-and-utopia" target="_blank" rel="noopener noreferrer"><em>Anarchy, State, and Utopia</em></a></td>
+<td>Robert Nozick</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780745641447" target="_blank" rel="noopener noreferrer"><em>World Poverty and Human Rights</em></a></td>
+<td>Thomas Pogge</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780691143248" target="_blank" rel="noopener noreferrer"><em>Democratic Authority: A Philosophical Framework</em></a></td>
+<td>David M. Estlund</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780199548668" target="_blank" rel="noopener noreferrer"><em>Killing in War</em></a></td>
+<td>Jeff McMahan</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="critical-relational-and-epistemic-ethics">Critical, Relational, and Epistemic Ethics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://archive.org/details/indifferentvoice00gill_0" target="_blank" rel="noopener noreferrer"><em>In a Different Voice: Psychological Theory and Women's Development</em></a></td>
+<td>Carol Gilligan</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780195180992" target="_blank" rel="noopener noreferrer"><em>The Ethics of Care: Personal, Political, and Global</em></a></td>
+<td>Virginia Held</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780198237907" target="_blank" rel="noopener noreferrer"><em>Epistemic Injustice: Power and the Ethics of Knowing</em></a></td>
+<td>Miranda Fricker</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780801484636" target="_blank" rel="noopener noreferrer"><em>The Racial Contract</em></a></td>
+<td>Charles W. Mills</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780198748960" target="_blank" rel="noopener noreferrer"><em>A Relational Moral Theory: African Ethics in and Beyond the Continent</em></a></td>
+<td>Thaddeus Metz</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>

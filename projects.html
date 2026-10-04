@@ -1,109 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/moral-philosophy/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/moral-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/moral-philosophy/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/moral-philosophy/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/moral-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/moral-philosophy/">Moral-Philosophy</a>
-<a href="/moral-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/moral-philosophy/projects.html">Projects</a>
-<a href="/moral-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/moral-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/moral-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/moral-philosophy/">Moral Philosophy</a></li>
+      <li><a href="/moral-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/moral-philosophy/projects.html">Projects</a></li>
+      <li><a href="/moral-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/moral-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/moral-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning <em>Ethics</em> through hands-on, project-based practice.</p>
 <blockquote>
-<p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
 <ul>
-<li><a href="#construct-your-own-ethical-theory">Ethical Theory</a></li>
-<li><a href="#construct-your-own-moral-argument">Moral Argument</a></li>
-<li><a href="#design-your-own-thought-experiment">Thought Experiment</a></li>
-<li><a href="#write-your-own-case-analysis">Case Analysis</a></li>
-<li><a href="#develop-your-own-normative-framework">Normative Framework</a></li>
-<li><a href="#write-your-own-applied-ethics-proposal">Applied Ethics Proposal</a></li>
-<li><a href="#articulate-your-own-metaethical-position">Metaethical Position</a></li>
-<li><a href="#build-your-own-deontological-system">Deontological System</a></li>
-<li><a href="#construct-your-own-care-ethics-model">Care Ethics Model</a></li>
-<li><a href="#reconstruct-your-own-contractarian-scheme">Contractarian Scheme</a></li>
-<li><a href="#formulate-your-own-moral-principle">Moral Principle</a></li>
-<li><a href="#write-your-own-ethical-critique">Ethical Critique</a></li>
+<li><a href="#write-your-own-moral-philosophy-essays">Moral Philosophy Essays</a></li>
+<li><a href="#conduct-your-own-ethical-case-analyses">Ethical Case Analyses</a></li>
+<li><a href="#design-your-own-philosophical-thought-experiments">Philosophical Thought Experiments</a></li>
+<li><a href="#conduct-your-own-ethical-impact-assessments">Ethical Impact Assessments</a></li>
+<li><a href="#draft-your-own-professional-codes-of-ethics">Professional Codes of Ethics</a></li>
+<li><a href="#prepare-your-own-ethics-bowl-presentations">Ethics Bowl Presentations</a></li>
 </ul>
-<h3 id="construct-your-own-ethical-theory">Construct your own ethical theory</h3>
+<h2 id="write-your-own-moral-philosophy-essays">Write your own moral philosophy essays</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://themicrophilosopher.substack.com/p/how-to-build-your-own-philosophy">How To Build Your Own Philosophy</a> (Step-by-step article / framework)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/">A Framework for Making Ethical Decisions</a> (Markkula Center – procedural guide adaptable to theory-building) (Step-by-step framework)</li>
+<li><a href="http://www.jimpryor.net/teaching/guidelines/writing.html" target="_blank" rel="noopener noreferrer">Guidelines on Writing a Philosophy Paper (Jim Pryor)</a></li>
+<li><a href="https://writingcenter.fas.harvard.edu/brief-guide-writing-philosophy-paper" target="_blank" rel="noopener noreferrer">A Brief Guide to Writing the Philosophy Paper (Harvard College Writing Center)</a></li>
+<li><a href="https://writingproject.fas.harvard.edu/files/hwp/files/er_15_guide_lo_res.pdf" target="_blank" rel="noopener noreferrer">A Guide to Writing in Ethical Reasoning 15 (Jay M. Harris, Harvard Writing Project)</a></li>
+<li><a href="https://writingproject.fas.harvard.edu/files/hwp/files/er22_guide.pdf" target="_blank" rel="noopener noreferrer">Writing in Ethical Reasoning 22: Justice (Michael J. Sandel &amp; Bettina Scholz, Harvard Writing Project)</a></li>
 </ul>
-<h3 id="construct-your-own-moral-argument">Construct your own moral argument</h3>
+<h2 id="conduct-your-own-ethical-case-analyses">Conduct your own ethical case analyses</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://writingproject.fas.harvard.edu/file_url/156">A Guide to Writing in Ethical Reasoning 15</a> (Harvard Writing Project – detailed paper-writing guide for constructing ethical arguments) (PDF guide)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=VtxH7kqtB58">How To Write An Ethical Argument?</a> (Philosophy Beyond – video walkthrough of crafting a moral argument) (Video tutorial)</li>
+<li><a href="https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/" target="_blank" rel="noopener noreferrer">A Framework for Ethical Decision Making (Markkula Center for Applied Ethics, Santa Clara University)</a></li>
+<li><a href="https://doi.org/10.1136/jme.2007.021212" target="_blank" rel="noopener noreferrer">The "Four Quadrants" Approach to Clinical Ethics Case Analysis (Daniel K. Sokol, Journal of Medical Ethics)</a></li>
+<li><a href="https://www.ukcen.net/" target="_blank" rel="noopener noreferrer">A Practical Guide for Clinical Ethics Support (Anne Slowther et al., The Ethox Centre / UKCEN)</a></li>
 </ul>
-<h3 id="design-your-own-thought-experiment">Design your own thought experiment</h3>
+<h2 id="design-your-own-philosophical-thought-experiments">Design your own philosophical thought experiments</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://philosophyteachers.org/files/Mark-Herman-Teaching-Moral-Philosophical-Methodology-though.pdf">Teaching Moral Philosophical Methodology through “Create Your Own Thought Experiment”</a> (Assignment instructions &amp; methodology guide) (PDF guide)</li>
+<li><a href="https://philosophyteachers.org/files/Mark-Herman-Teaching-Moral-Philosophical-Methodology-though.pdf" target="_blank" rel="noopener noreferrer">Teaching Moral Philosophical Methodology through "Create Your Own Thought Experiment" (Mark Herman, American Association of Philosophy Teachers)</a></li>
+<li><a href="https://plato.stanford.edu/entries/thought-experiment/" target="_blank" rel="noopener noreferrer">Thought Experiments in Philosophy (Stanford Encyclopedia of Philosophy)</a></li>
 </ul>
-<h3 id="write-your-own-case-analysis">Write your own case analysis</h3>
+<h2 id="conduct-your-own-ethical-impact-assessments">Conduct your own ethical impact assessments</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://writingproject.fas.harvard.edu/file_url/156">A Guide to Writing in Ethical Reasoning 15</a> (Harvard – includes case-based ethical reasoning and analysis structure) (PDF guide)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/">A Framework for Ethical Decision Making</a> (Markkula Center – step-by-step process for analyzing ethical cases) (Procedural guide)</li>
+<li><a href="https://www.scu.edu/ethics/focus-areas/technology-ethics/resources/ethics-in-technology-practice/" target="_blank" rel="noopener noreferrer">Ethics in Technology Practice: An Ethical Toolkit for Technologists (Shannon Vallor, Brian Green, &amp; Irina Raicu, Markkula Center for Applied Ethics)</a></li>
+<li><a href="https://doi.org/10.54678/YTSA7796" target="_blank" rel="noopener noreferrer">Ethical Impact Assessment: A Tool of the Recommendation on the Ethics of Artificial Intelligence (UNESCO)</a></li>
+<li><a href="https://satoriproject.eu/" target="_blank" rel="noopener noreferrer">A Common Framework for Ethical Impact Assessment (SATORI Project)</a></li>
 </ul>
-<h3 id="develop-your-own-normative-framework">Develop your own normative framework</h3>
+<h2 id="draft-your-own-professional-codes-of-ethics">Draft your own professional codes of ethics</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://themicrophilosopher.substack.com/p/how-to-build-your-own-philosophy">How To Build Your Own Philosophy</a> (Systematic method adaptable to normative frameworks) (Article / tutorial)</li>
+<li><a href="https://doi.org/10.1007/s11948-007-9000-2" target="_blank" rel="noopener noreferrer">Eighteen Rules for Writing a Code of Professional Ethics (Michael Davis, Center for the Study of Ethics in the Professions / Springer)</a></li>
+<li><a href="https://www.iit.edu/csep" target="_blank" rel="noopener noreferrer">Codes of Ethics Collection and Drafting Guidelines (Center for the Study of Ethics in the Professions, Illinois Institute of Technology)</a></li>
+<li><a href="http://www.ethicsweb.ca/codes/" target="_blank" rel="noopener noreferrer">Creating a Code of Ethics for Your Organization (Chris MacDonald, EthicsWeb)</a></li>
 </ul>
-<h3 id="write-your-own-applied-ethics-proposal">Write your own applied ethics proposal</h3>
+<h2 id="prepare-your-own-ethics-bowl-presentations">Prepare your own ethics bowl presentations</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/">A Framework for Ethical Decision Making</a> (Markkula Center – procedural steps easily adapted to proposal writing in applied contexts) (Step-by-step guide)</li>
+<li><a href="https://www.ethicsbowl.org/resources/" target="_blank" rel="noopener noreferrer">Case Analysis Guide and Presentation Planner (Michael Andersen, EthicsBowl.org)</a></li>
+<li><a href="https://appe-ethics.org/about-ethics-bowl-appe-ieb/" target="_blank" rel="noopener noreferrer">APPE Intercollegiate Ethics Bowl Rules, Procedures, and Scoring Rubrics (Association for Practical and Professional Ethics)</a></li>
+<li><a href="https://nhseb.unc.edu/" target="_blank" rel="noopener noreferrer">National High School Ethics Bowl Case Library and Discussion Archive (Parr Center for Ethics, UNC Chapel Hill)</a></li>
 </ul>
-<h3 id="build-your-own-deontological-system">Build your own deontological system</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/askphilosophy/comments/x3slr5/how_can_i_construct_my_own_personal_moral_system">How can I construct my own personal moral system? (Reddit / r/askphilosophy discussion)</a> (<em>Advice applicable to building rule-based systems</em>)</li>
-</ul>
-<h3 id="construct-your-own-care-ethics-model">Construct your own care ethics model</h3>
-<p>No specific instructional tutorials are publicly available that guide the step-by-step construction of an original care ethics model.</p>
-<h3 id="reconstruct-your-own-contractarian-scheme">Reconstruct your own contractarian scheme</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/calculating-consequences-the-utilitarian-approach">Calculating Consequences: The Utilitarian Approach to Ethics (Santa Clara University)</a> (<em>Step-by-step consequentialist method</em>)</li>
-</ul>
-<h3 id="formulate-your-own-moral-principle">Formulate your own moral principle</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.wgu.edu/blog/how-write-personal-ethics-statement-why-every-professional-should2202.html">How to Write a Personal Ethics Statement—And Why Every Professional Should</a> (Step-by-step guide to formulating core ethical/moral principles) (Tutorial article)</li>
-</ul>
-<h3 id="write-your-own-ethical-critique">Write your own ethical critique</h3>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://writingproject.fas.harvard.edu/file_url/156">A Guide to Writing in Ethical Reasoning 15</a> (Harvard – includes guidance on constructing critical ethical arguments and critiques) (PDF writing guide)</li>
-</ul>
-<p>These resources emphasize procedural and constructive approaches wherever possible. For categories with fewer or no dedicated guides, the activity is typically best supported by instructor feedback, peer workshops, or building directly on primary texts in moral philosophy.</p>
-</article>
-</main>
+    </article>
+  </main>
 
 </body>
 </html>
